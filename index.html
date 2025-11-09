@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CasaDireta - Conectando você diretamente ao proprietário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="logo">CasaDireta</h1>
+                <ul class="nav-menu">
+                    <li><a href="#como-funciona">Como Funciona</a></li>
+                    <li><a href="#para-proprietarios">Para Proprietários</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="login.html" class="login-btn">Entrar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Encontre seu imóvel direto com o proprietário</h1>
+                <p>Sem intermediários, sem taxas extras. Conectamos você diretamente aos donos dos imóveis.</p>
+                
+                <form action="index.php" method="GET" class="search-form">
+                    <div class="search-inputs">
+                        <input type="text" name="cidade" placeholder="Cidade" required>
+                        <select name="tipo" required>
+                            <option value="">Tipo de Imóvel</option>
+                            <option value="casa">Casa</option>
+                            <option value="apartamento">Apartamento</option>
+                            <option value="sobrado">Sobrado</option>
+                            <option value="kitnet">Kitnet</option>
+                        </select>
+                        <select name="transacao" required>
+                            <option value="">Comprar ou Alugar?</option>
+                            <option value="venda">Comprar</option>
+                            <option value="aluguel">Alugar</option>
+                        </select>
+                        <button type="submit">Buscar Imóveis</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="como-funciona" class="how-it-works">
+            <div class="container">
+                <h2>Como Funciona</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Busque</h3>
+                        <p>Encontre imóveis na região desejada</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Conecte</h3>
+                        <p>Veja os dados diretos do proprietário</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Negocie</h3>
+                        <p>Feche o negócio sem intermediários</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="para-proprietarios" class="for-owners">
+            <div class="container">
+                <div class="owner-content">
+                    <div class="owner-text">
+                        <h2>É proprietário?</h2>
+                        <p>Anuncie seu imóvel gratuitamente e converse diretamente com interessados sérios.</p>
+                        <ul>
+                            <li>✔️ Anúncio 100% gratuito</li>
+                            <li>✔️ Contato direto com compradores</li>
+                            <li>✔️ Sem taxas de intermediação</li>
+                            <li>✔️ Você controla todo o processo</li>
+                        </ul>
+                        <a href="Cadastro.html" class="cta-button">Anunciar Meu Imóvel</a>
+                    </div>
+                    <div class="owner-image">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Proprietário feliz">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CasaDireta</h3>
+                    <p>Conectando você diretamente ao proprietário</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#como-funciona">Como Funciona</a></li>
+                        <li><a href="#para-proprietarios">Para Proprietários</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>Email: contato@casadireta.com</p>
+                    <p>Telefone: (11) 99999-9999</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CasaDireta. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
